@@ -1,0 +1,109 @@
+/* Update the body background color and border color for game board */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Borders and grid */
+/* Borders and grid */
+.game-border-1 {
+    border-radius: 30px;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff9f43, #ff6b6b); /* Gradient from orange to red */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.game-border-2 {
+    border-radius: 26px;
+    padding: 15px;
+    background: linear-gradient(45deg, #ff6b6b, #4a69bd); /* Gradient from red to blue */
+}
+
+.game-border-3 {
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(45deg, #4a69bd, #ff9f43); /* Gradient from blue to orange */
+}
+
+/* Snake and Food styles remain unchanged */
+/* ... */
+
+
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 2px;
+    background-color: #2d3c4b; /* Light blue-grey board background */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Text styles */
+#instrctuction-text {
+    position: absolute;
+    top: 60%;
+    color: #dccfcf;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+#score {
+    color: #aac813;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#high-score {
+    color: #191313;
+    font-size: 40px;
+    
+    font-weight: bold;
+    display: none;
+}
+
+/* Snake and Food styles */
+.snake {
+    background-color: #2ecc71; /* Green color for snake */
+    border: 1px solid #27ae60; /* Darker border for snake */
+}
+
+.food {
+    background-color: #e74c3c; /* Red color for food */
+    border: 5px solid #c0392b;
+    /* Darker border for food */
+}
+
+/* Logo */
+#logo {
+    position: absolute;
+   
+    width: 250px;
+    height: 250px;
+    
+
+}
